@@ -282,10 +282,6 @@ impl crate::Readable for BLOCK_GAP_CTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`block_gap_ctrl::W`](W) writer structure"]
 impl crate::Writable for BLOCK_GAP_CTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u8 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u8 = 0;
 }
 #[doc = "`reset()` method sets BLOCK_GAP_CTRL to value 0"]
-impl crate::Resettable for BLOCK_GAP_CTRL_SPEC {
-    const RESET_VALUE: u8 = 0;
-}
+impl crate::Resettable for BLOCK_GAP_CTRL_SPEC {}

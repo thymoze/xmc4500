@@ -298,10 +298,6 @@ impl crate::RegisterSpec for CLEARERR_SPEC {
 #[doc = "`write(|w| ..)` method takes [`clearerr::W`](W) writer structure"]
 impl crate::Writable for CLEARERR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CLEARERR to value 0"]
-impl crate::Resettable for CLEARERR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CLEARERR_SPEC {}

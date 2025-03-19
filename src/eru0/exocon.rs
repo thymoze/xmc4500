@@ -564,11 +564,8 @@ impl crate::Readable for EXOCON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`exocon::W`](W) writer structure"]
 impl crate::Writable for EXOCON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
-#[doc = "`reset()` method sets EXOCON[%s]
-to value 0x08"]
+#[doc = "`reset()` method sets EXOCON[%s] to value 0x08"]
 impl crate::Resettable for EXOCON_SPEC {
     const RESET_VALUE: u32 = 0x08;
 }

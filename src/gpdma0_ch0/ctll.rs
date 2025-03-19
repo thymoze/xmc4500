@@ -420,8 +420,6 @@ impl crate::Readable for CTLL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ctll::W`](W) writer structure"]
 impl crate::Writable for CTLL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CTLL to value 0x0030_4801"]
 impl crate::Resettable for CTLL_SPEC {

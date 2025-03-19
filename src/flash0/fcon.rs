@@ -922,8 +922,6 @@ impl crate::Readable for FCON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fcon::W`](W) writer structure"]
 impl crate::Writable for FCON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FCON to value 0x06"]
 impl crate::Resettable for FCON_SPEC {

@@ -303,8 +303,6 @@ impl crate::Readable for MAC_CONFIGURATION_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mac_configuration::W`](W) writer structure"]
 impl crate::Writable for MAC_CONFIGURATION_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MAC_CONFIGURATION to value 0x8000"]
 impl crate::Resettable for MAC_CONFIGURATION_SPEC {

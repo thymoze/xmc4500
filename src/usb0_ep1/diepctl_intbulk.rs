@@ -320,10 +320,6 @@ impl crate::Readable for DIEPCTL_INTBULK_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`diepctl_intbulk::W`](W) writer structure"]
 impl crate::Writable for DIEPCTL_INTBULK_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DIEPCTL_INTBULK to value 0"]
-impl crate::Resettable for DIEPCTL_INTBULK_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for DIEPCTL_INTBULK_SPEC {}

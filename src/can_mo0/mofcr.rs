@@ -734,10 +734,6 @@ impl crate::Readable for MOFCR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mofcr::W`](W) writer structure"]
 impl crate::Writable for MOFCR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MOFCR to value 0"]
-impl crate::Resettable for MOFCR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MOFCR_SPEC {}

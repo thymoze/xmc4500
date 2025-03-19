@@ -519,11 +519,9 @@ where
 #[doc = "Receiver Status Enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RSTEN_A {
-    #[doc = "0: Flag PSR\\[9\\]
-is not modified depending on the receiver status."]
+    #[doc = "0: Flag PSR\\[9\\] is not modified depending on the receiver status."]
     VALUE1 = 0,
-    #[doc = "1: Flag PSR\\[9\\]
-is set during the complete reception of a frame."]
+    #[doc = "1: Flag PSR\\[9\\] is set during the complete reception of a frame."]
     VALUE2 = 1,
 }
 impl From<RSTEN_A> for bool {
@@ -543,14 +541,12 @@ impl RSTEN_R {
             true => RSTEN_A::VALUE2,
         }
     }
-    #[doc = "Flag PSR\\[9\\]
-is not modified depending on the receiver status."]
+    #[doc = "Flag PSR\\[9\\] is not modified depending on the receiver status."]
     #[inline(always)]
     pub fn is_value1(&self) -> bool {
         *self == RSTEN_A::VALUE1
     }
-    #[doc = "Flag PSR\\[9\\]
-is set during the complete reception of a frame."]
+    #[doc = "Flag PSR\\[9\\] is set during the complete reception of a frame."]
     #[inline(always)]
     pub fn is_value2(&self) -> bool {
         *self == RSTEN_A::VALUE2
@@ -562,14 +558,12 @@ impl<'a, REG> RSTEN_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
 {
-    #[doc = "Flag PSR\\[9\\]
-is not modified depending on the receiver status."]
+    #[doc = "Flag PSR\\[9\\] is not modified depending on the receiver status."]
     #[inline(always)]
     pub fn value1(self) -> &'a mut crate::W<REG> {
         self.variant(RSTEN_A::VALUE1)
     }
-    #[doc = "Flag PSR\\[9\\]
-is set during the complete reception of a frame."]
+    #[doc = "Flag PSR\\[9\\] is set during the complete reception of a frame."]
     #[inline(always)]
     pub fn value2(self) -> &'a mut crate::W<REG> {
         self.variant(RSTEN_A::VALUE2)
@@ -578,11 +572,9 @@ is set during the complete reception of a frame."]
 #[doc = "Transmitter Status Enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum TSTEN_A {
-    #[doc = "0: Flag PSR\\[9\\]
-is not modified depending on the transmitter status."]
+    #[doc = "0: Flag PSR\\[9\\] is not modified depending on the transmitter status."]
     VALUE1 = 0,
-    #[doc = "1: Flag PSR\\[9\\]
-is set during the complete transmission of a frame."]
+    #[doc = "1: Flag PSR\\[9\\] is set during the complete transmission of a frame."]
     VALUE2 = 1,
 }
 impl From<TSTEN_A> for bool {
@@ -602,14 +594,12 @@ impl TSTEN_R {
             true => TSTEN_A::VALUE2,
         }
     }
-    #[doc = "Flag PSR\\[9\\]
-is not modified depending on the transmitter status."]
+    #[doc = "Flag PSR\\[9\\] is not modified depending on the transmitter status."]
     #[inline(always)]
     pub fn is_value1(&self) -> bool {
         *self == TSTEN_A::VALUE1
     }
-    #[doc = "Flag PSR\\[9\\]
-is set during the complete transmission of a frame."]
+    #[doc = "Flag PSR\\[9\\] is set during the complete transmission of a frame."]
     #[inline(always)]
     pub fn is_value2(&self) -> bool {
         *self == TSTEN_A::VALUE2
@@ -621,14 +611,12 @@ impl<'a, REG> TSTEN_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
 {
-    #[doc = "Flag PSR\\[9\\]
-is not modified depending on the transmitter status."]
+    #[doc = "Flag PSR\\[9\\] is not modified depending on the transmitter status."]
     #[inline(always)]
     pub fn value1(self) -> &'a mut crate::W<REG> {
         self.variant(TSTEN_A::VALUE1)
     }
-    #[doc = "Flag PSR\\[9\\]
-is set during the complete transmission of a frame."]
+    #[doc = "Flag PSR\\[9\\] is set during the complete transmission of a frame."]
     #[inline(always)]
     pub fn value2(self) -> &'a mut crate::W<REG> {
         self.variant(TSTEN_A::VALUE2)
@@ -831,10 +819,6 @@ impl crate::Readable for PCR_ASCMODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pcr_ascmode::W`](W) writer structure"]
 impl crate::Writable for PCR_ASCMODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PCR_ASCMode to value 0"]
-impl crate::Resettable for PCR_ASCMODE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PCR_ASCMODE_SPEC {}

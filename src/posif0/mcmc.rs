@@ -24,10 +24,6 @@ impl crate::RegisterSpec for MCMC_SPEC {
 #[doc = "`write(|w| ..)` method takes [`mcmc::W`](W) writer structure"]
 impl crate::Writable for MCMC_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MCMC to value 0"]
-impl crate::Resettable for MCMC_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for MCMC_SPEC {}

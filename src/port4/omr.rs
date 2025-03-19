@@ -234,10 +234,6 @@ impl crate::RegisterSpec for OMR_SPEC {
 #[doc = "`write(|w| ..)` method takes [`omr::W`](W) writer structure"]
 impl crate::Writable for OMR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OMR to value 0"]
-impl crate::Resettable for OMR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for OMR_SPEC {}

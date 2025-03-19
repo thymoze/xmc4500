@@ -1344,8 +1344,6 @@ impl crate::Readable for HWSEL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hwsel::W`](W) writer structure"]
 impl crate::Writable for HWSEL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HWSEL to value 0x0001_4000"]
 impl crate::Resettable for HWSEL_SPEC {

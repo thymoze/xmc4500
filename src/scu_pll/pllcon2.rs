@@ -142,8 +142,6 @@ impl crate::Readable for PLLCON2_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pllcon2::W`](W) writer structure"]
 impl crate::Writable for PLLCON2_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PLLCON2 to value 0x01"]
 impl crate::Resettable for PLLCON2_SPEC {

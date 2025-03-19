@@ -171,8 +171,6 @@ impl crate::Readable for DTSCON_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dtscon::W`](W) writer structure"]
 impl crate::Writable for DTSCON_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DTSCON to value 0x01"]
 impl crate::Resettable for DTSCON_SPEC {

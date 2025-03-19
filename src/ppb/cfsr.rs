@@ -1213,10 +1213,6 @@ impl crate::Readable for CFSR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cfsr::W`](W) writer structure"]
 impl crate::Writable for CFSR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CFSR to value 0"]
-impl crate::Resettable for CFSR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CFSR_SPEC {}

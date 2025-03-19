@@ -156,8 +156,6 @@ impl crate::Readable for SYST_CALIB_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`syst_calib::W`](W) writer structure"]
 impl crate::Writable for SYST_CALIB_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYST_CALIB to value 0xc000_0000"]
 impl crate::Resettable for SYST_CALIB_SPEC {

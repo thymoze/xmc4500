@@ -205,8 +205,6 @@ impl crate::Readable for BUS_MODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`bus_mode::W`](W) writer structure"]
 impl crate::Writable for BUS_MODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BUS_MODE to value 0x0002_0101"]
 impl crate::Resettable for BUS_MODE_SPEC {

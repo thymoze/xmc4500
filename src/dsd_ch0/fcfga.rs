@@ -362,10 +362,6 @@ impl crate::Readable for FCFGA_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fcfga::W`](W) writer structure"]
 impl crate::Writable for FCFGA_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FCFGA to value 0"]
-impl crate::Resettable for FCFGA_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FCFGA_SPEC {}

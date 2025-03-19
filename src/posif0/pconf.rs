@@ -981,11 +981,9 @@ where
 #[doc = "External Wrong Hall Event active level\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EWIL_A {
-    #[doc = "0: POSIFx.EWHE\\[D...A\\]
-signal is active HIGH"]
+    #[doc = "0: POSIFx.EWHE\\[D...A\\] signal is active HIGH"]
     VALUE1 = 0,
-    #[doc = "1: POSIFx.EWHE\\[D...A\\]
-signal is active LOW"]
+    #[doc = "1: POSIFx.EWHE\\[D...A\\] signal is active LOW"]
     VALUE2 = 1,
 }
 impl From<EWIL_A> for bool {
@@ -1005,14 +1003,12 @@ impl EWIL_R {
             true => EWIL_A::VALUE2,
         }
     }
-    #[doc = "POSIFx.EWHE\\[D...A\\]
-signal is active HIGH"]
+    #[doc = "POSIFx.EWHE\\[D...A\\] signal is active HIGH"]
     #[inline(always)]
     pub fn is_value1(&self) -> bool {
         *self == EWIL_A::VALUE1
     }
-    #[doc = "POSIFx.EWHE\\[D...A\\]
-signal is active LOW"]
+    #[doc = "POSIFx.EWHE\\[D...A\\] signal is active LOW"]
     #[inline(always)]
     pub fn is_value2(&self) -> bool {
         *self == EWIL_A::VALUE2
@@ -1024,14 +1020,12 @@ impl<'a, REG> EWIL_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
 {
-    #[doc = "POSIFx.EWHE\\[D...A\\]
-signal is active HIGH"]
+    #[doc = "POSIFx.EWHE\\[D...A\\] signal is active HIGH"]
     #[inline(always)]
     pub fn value1(self) -> &'a mut crate::W<REG> {
         self.variant(EWIL_A::VALUE1)
     }
-    #[doc = "POSIFx.EWHE\\[D...A\\]
-signal is active LOW"]
+    #[doc = "POSIFx.EWHE\\[D...A\\] signal is active LOW"]
     #[inline(always)]
     pub fn value2(self) -> &'a mut crate::W<REG> {
         self.variant(EWIL_A::VALUE2)
@@ -1349,10 +1343,6 @@ impl crate::Readable for PCONF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pconf::W`](W) writer structure"]
 impl crate::Writable for PCONF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PCONF to value 0"]
-impl crate::Resettable for PCONF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PCONF_SPEC {}

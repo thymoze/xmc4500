@@ -30,8 +30,6 @@ impl crate::Readable for MAC_ADDRESS3_LOW_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`mac_address3_low::W`](W) writer structure"]
 impl crate::Writable for MAC_ADDRESS3_LOW_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MAC_ADDRESS3_LOW to value 0xffff_ffff"]
 impl crate::Resettable for MAC_ADDRESS3_LOW_SPEC {

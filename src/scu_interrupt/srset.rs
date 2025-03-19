@@ -550,10 +550,6 @@ impl crate::RegisterSpec for SRSET_SPEC {
 #[doc = "`write(|w| ..)` method takes [`srset::W`](W) writer structure"]
 impl crate::Writable for SRSET_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRSET to value 0"]
-impl crate::Resettable for SRSET_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRSET_SPEC {}

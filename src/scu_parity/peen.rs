@@ -835,10 +835,6 @@ impl crate::Readable for PEEN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`peen::W`](W) writer structure"]
 impl crate::Writable for PEEN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PEEN to value 0"]
-impl crate::Resettable for PEEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PEEN_SPEC {}

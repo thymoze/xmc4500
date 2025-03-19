@@ -93,8 +93,6 @@ impl crate::Readable for MOAMR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`moamr::W`](W) writer structure"]
 impl crate::Writable for MOAMR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets MOAMR to value 0x3fff_ffff"]
 impl crate::Resettable for MOAMR_SPEC {

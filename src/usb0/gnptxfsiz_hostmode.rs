@@ -44,8 +44,6 @@ impl crate::Readable for GNPTXFSIZ_HOSTMODE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`gnptxfsiz_hostmode::W`](W) writer structure"]
 impl crate::Writable for GNPTXFSIZ_HOSTMODE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets GNPTXFSIZ_HOSTMODE to value 0x0010_011a"]
 impl crate::Resettable for GNPTXFSIZ_HOSTMODE_SPEC {

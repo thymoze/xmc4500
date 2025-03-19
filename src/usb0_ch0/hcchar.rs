@@ -440,10 +440,6 @@ impl crate::Readable for HCCHAR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`hcchar::W`](W) writer structure"]
 impl crate::Writable for HCCHAR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets HCCHAR to value 0"]
-impl crate::Resettable for HCCHAR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for HCCHAR_SPEC {}

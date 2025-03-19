@@ -156,10 +156,6 @@ impl crate::Readable for SDRMREF_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdrmref::W`](W) writer structure"]
 impl crate::Writable for SDRMREF_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDRMREF to value 0"]
-impl crate::Resettable for SDRMREF_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SDRMREF_SPEC {}

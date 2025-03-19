@@ -118,8 +118,7 @@ where
 #[doc = "Enable External Pull-up Configuration on Pin COLA\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EPULL_A {
-    #[doc = "0: HW over-rule to enable internal pull-up is active on TSIN\\[x\\]
-for set duration in touch-sense time slice. With this setting, it is not specified to assign the COLA to any pin."]
+    #[doc = "0: HW over-rule to enable internal pull-up is active on TSIN\\[x\\] for set duration in touch-sense time slice. With this setting, it is not specified to assign the COLA to any pin."]
     VALUE1 = 0,
     #[doc = "1: Enable external pull-up: Output 1 on pin COLA for whole duration of touch-sense time slice."]
     VALUE2 = 1,
@@ -141,8 +140,7 @@ impl EPULL_R {
             true => EPULL_A::VALUE2,
         }
     }
-    #[doc = "HW over-rule to enable internal pull-up is active on TSIN\\[x\\]
-for set duration in touch-sense time slice. With this setting, it is not specified to assign the COLA to any pin."]
+    #[doc = "HW over-rule to enable internal pull-up is active on TSIN\\[x\\] for set duration in touch-sense time slice. With this setting, it is not specified to assign the COLA to any pin."]
     #[inline(always)]
     pub fn is_value1(&self) -> bool {
         *self == EPULL_A::VALUE1
@@ -159,8 +157,7 @@ impl<'a, REG> EPULL_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
 {
-    #[doc = "HW over-rule to enable internal pull-up is active on TSIN\\[x\\]
-for set duration in touch-sense time slice. With this setting, it is not specified to assign the COLA to any pin."]
+    #[doc = "HW over-rule to enable internal pull-up is active on TSIN\\[x\\] for set duration in touch-sense time slice. With this setting, it is not specified to assign the COLA to any pin."]
     #[inline(always)]
     pub fn value1(self) -> &'a mut crate::W<REG> {
         self.variant(EPULL_A::VALUE1)
@@ -871,10 +868,6 @@ impl crate::Readable for FNCTL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fnctl::W`](W) writer structure"]
 impl crate::Writable for FNCTL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FNCTL to value 0"]
-impl crate::Resettable for FNCTL_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FNCTL_SPEC {}

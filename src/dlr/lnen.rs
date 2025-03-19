@@ -772,10 +772,6 @@ impl crate::Readable for LNEN_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`lnen::W`](W) writer structure"]
 impl crate::Writable for LNEN_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets LNEN to value 0"]
-impl crate::Resettable for LNEN_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for LNEN_SPEC {}

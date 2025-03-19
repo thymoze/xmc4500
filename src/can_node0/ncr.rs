@@ -422,8 +422,6 @@ impl crate::Readable for NCR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ncr::W`](W) writer structure"]
 impl crate::Writable for NCR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets NCR to value 0x01"]
 impl crate::Resettable for NCR_SPEC {

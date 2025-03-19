@@ -338,8 +338,6 @@ impl crate::Readable for SDRMOD_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`sdrmod::W`](W) writer structure"]
 impl crate::Writable for SDRMOD_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SDRMOD to value 0x20"]
 impl crate::Resettable for SDRMOD_SPEC {

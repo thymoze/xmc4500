@@ -615,8 +615,6 @@ impl crate::Readable for BUSWCON3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`buswcon3::W`](W) writer structure"]
 impl crate::Writable for BUSWCON3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BUSWCON3 to value 0x00d3_0000"]
 impl crate::Resettable for BUSWCON3_SPEC {

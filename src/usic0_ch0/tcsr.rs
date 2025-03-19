@@ -58,11 +58,9 @@ where
 #[doc = "Select Mode\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum SELMD_A {
-    #[doc = "0: The automatic update of PCR.CTR\\[23:16\\]
-is disabled."]
+    #[doc = "0: The automatic update of PCR.CTR\\[23:16\\] is disabled."]
     VALUE1 = 0,
-    #[doc = "1: The automatic update of PCR.CTR\\[23:16\\]
-is disabled."]
+    #[doc = "1: The automatic update of PCR.CTR\\[23:16\\] is disabled."]
     VALUE2 = 1,
 }
 impl From<SELMD_A> for bool {
@@ -82,14 +80,12 @@ impl SELMD_R {
             true => SELMD_A::VALUE2,
         }
     }
-    #[doc = "The automatic update of PCR.CTR\\[23:16\\]
-is disabled."]
+    #[doc = "The automatic update of PCR.CTR\\[23:16\\] is disabled."]
     #[inline(always)]
     pub fn is_value1(&self) -> bool {
         *self == SELMD_A::VALUE1
     }
-    #[doc = "The automatic update of PCR.CTR\\[23:16\\]
-is disabled."]
+    #[doc = "The automatic update of PCR.CTR\\[23:16\\] is disabled."]
     #[inline(always)]
     pub fn is_value2(&self) -> bool {
         *self == SELMD_A::VALUE2
@@ -101,14 +97,12 @@ impl<'a, REG> SELMD_W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
 {
-    #[doc = "The automatic update of PCR.CTR\\[23:16\\]
-is disabled."]
+    #[doc = "The automatic update of PCR.CTR\\[23:16\\] is disabled."]
     #[inline(always)]
     pub fn value1(self) -> &'a mut crate::W<REG> {
         self.variant(SELMD_A::VALUE1)
     }
-    #[doc = "The automatic update of PCR.CTR\\[23:16\\]
-is disabled."]
+    #[doc = "The automatic update of PCR.CTR\\[23:16\\] is disabled."]
     #[inline(always)]
     pub fn value2(self) -> &'a mut crate::W<REG> {
         self.variant(SELMD_A::VALUE2)
@@ -953,10 +947,6 @@ impl crate::Readable for TCSR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`tcsr::W`](W) writer structure"]
 impl crate::Writable for TCSR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets TCSR to value 0"]
-impl crate::Resettable for TCSR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for TCSR_SPEC {}

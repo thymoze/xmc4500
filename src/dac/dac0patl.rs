@@ -100,8 +100,6 @@ impl crate::Readable for DAC0PATL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`dac0patl::W`](W) writer structure"]
 impl crate::Writable for DAC0PATL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets DAC0PATL to value 0x3568_b0c0"]
 impl crate::Resettable for DAC0PATL_SPEC {

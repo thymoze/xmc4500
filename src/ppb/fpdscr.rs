@@ -72,10 +72,6 @@ impl crate::Readable for FPDSCR_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`fpdscr::W`](W) writer structure"]
 impl crate::Writable for FPDSCR_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets FPDSCR to value 0"]
-impl crate::Resettable for FPDSCR_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for FPDSCR_SPEC {}

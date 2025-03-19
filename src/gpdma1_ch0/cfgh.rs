@@ -184,8 +184,6 @@ impl crate::Readable for CFGH_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`cfgh::W`](W) writer structure"]
 impl crate::Writable for CFGH_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CFGH to value 0x04"]
 impl crate::Resettable for CFGH_SPEC {

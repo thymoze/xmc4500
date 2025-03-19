@@ -298,10 +298,6 @@ impl crate::RegisterSpec for SRACT_SPEC {
 #[doc = "`write(|w| ..)` method takes [`sract::W`](W) writer structure"]
 impl crate::Writable for SRACT_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SRACT to value 0"]
-impl crate::Resettable for SRACT_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SRACT_SPEC {}

@@ -520,10 +520,6 @@ impl crate::Readable for CEFLAG_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`ceflag::W`](W) writer structure"]
 impl crate::Writable for CEFLAG_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets CEFLAG to value 0"]
-impl crate::Resettable for CEFLAG_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for CEFLAG_SPEC {}

@@ -893,8 +893,6 @@ impl crate::Readable for BUSWAP3_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`buswap3::W`](W) writer structure"]
 impl crate::Writable for BUSWAP3_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets BUSWAP3 to value 0xffff_ffff"]
 impl crate::Resettable for BUSWAP3_SPEC {

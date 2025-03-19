@@ -79,8 +79,6 @@ impl crate::Readable for OSCSICTRL_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`oscsictrl::W`](W) writer structure"]
 impl crate::Writable for OSCSICTRL_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets OSCSICTRL to value 0x01"]
 impl crate::Resettable for OSCSICTRL_SPEC {

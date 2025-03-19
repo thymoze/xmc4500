@@ -100,10 +100,6 @@ impl crate::Readable for PMT_CONTROL_STATUS_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`pmt_control_status::W`](W) writer structure"]
 impl crate::Writable for PMT_CONTROL_STATUS_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets PMT_CONTROL_STATUS to value 0"]
-impl crate::Resettable for PMT_CONTROL_STATUS_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for PMT_CONTROL_STATUS_SPEC {}

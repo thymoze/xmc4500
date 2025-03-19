@@ -44,10 +44,6 @@ impl crate::Readable for SYSTEM_TIME_NANOSECONDS_UPDATE_SPEC {}
 #[doc = "`write(|w| ..)` method takes [`system_time_nanoseconds_update::W`](W) writer structure"]
 impl crate::Writable for SYSTEM_TIME_NANOSECONDS_UPDATE_SPEC {
     type Safety = crate::Unsafe;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
 }
 #[doc = "`reset()` method sets SYSTEM_TIME_NANOSECONDS_UPDATE to value 0"]
-impl crate::Resettable for SYSTEM_TIME_NANOSECONDS_UPDATE_SPEC {
-    const RESET_VALUE: u32 = 0;
-}
+impl crate::Resettable for SYSTEM_TIME_NANOSECONDS_UPDATE_SPEC {}
